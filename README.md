@@ -8,6 +8,7 @@
 -->
 
 <!-- PROJECT SHIELDS -->
+
 <!--
 *** I'm using markdown "reference style" links for readability.
 *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
@@ -16,14 +17,15 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[Contributors][contributors-url]
+[Forks][forks-url]
+[Stargazers][stars-url]
+[Issues][issues-url]
+[MIT License][license-url]
+[LinkedIn][linkedin-url]
 
 <!-- PROJECT LOGO -->
+
 <br />
 <div align="center">
   <a href="https://github.com/kennethtegrado/zernlp">
@@ -32,7 +34,7 @@
 
 <h3 align="center">zernlp</h3>
 
-  <p align="center">
+<p align="center">
     A Natural Language Processing (NLP) Library for Filipino
     <br />
     <a href="https://github.com/kennethtegrado/zernlp"><strong>Explore the docs »</strong></a>
@@ -45,6 +47,7 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -74,27 +77,29 @@
 ## Installation
 
 1. To start using **zernlp**, you can easily install it via pip:
-    ```sh
-    pip install zernlp
-    ```
+   ```sh
+   pip install zernlp
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 
 ## Usage
+
 ```python
-import zernlp
+from zernlp.tokenizers import sentence_tokenizer, tokenizer
 
 text = "Ito'y isang halimbawa ng paggamit sa zernlp para sa pag-tokenize ng isang pangungusap."
 
 # ipasa ang text
-nlp = zernlp(text)
+sentences = sentence_tokenizer(text)
+tokens = tokenizer(text)
 
-for token in nlp.tokens():
+for token in tokens:
   print(tokens)
 
-for sentences in nlp.sentences():
+for sentence in sentences:
   print(sentences)
 
 ```
@@ -105,11 +110,11 @@ for sentences in nlp.sentences():
 
 ## Roadmap
 
--   [ ]**Tokenization:** Efficiently split text into individual words or tokens, catering the Filipino language and tokenization rules.
--   [ ]**Lemmatization and Stemming:** Reduce words to their base or root form for better information retrieval and analysis.
--   [ ]**Part-of-Speech (POS) Tagging:** Assign grammatical tags to words, enabling linguistic analysis and information extraction.
--   [ ]**Named Entity Recognition (NER):** Identify and categorize entities like persons, locations, and organizations in the text.
--   [ ]**Dependency Parsing:** Analyze the grammatical structure of sentences and identify the relationships between words.
+- [ ]**Tokenization:** Efficiently split text into individual words or tokens, catering the Filipino language and tokenization rules.
+- [ ]**Lemmatization and Stemming:** Reduce words to their base or root form for better information retrieval and analysis.
+- [ ]**Part-of-Speech (POS) Tagging:** Assign grammatical tags to words, enabling linguistic analysis and information extraction.
+- [ ]**Named Entity Recognition (NER):** Identify and categorize entities like persons, locations, and organizations in the text.
+- [ ]**Dependency Parsing:** Analyze the grammatical structure of sentences and identify the relationships between words.
 
 See the [open issues](https://github.com/kennethtegrado/zernlp/issues) for a full list of proposed features (and known issues).
 
@@ -161,6 +166,7 @@ Project Link: [https://github.com/kennethtegrado/zernlp](https://github.com/kenn
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
+
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/kennethtegrado/zernlp.svg?style=for-the-badge
