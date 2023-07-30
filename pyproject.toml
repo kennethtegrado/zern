@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zernlp"
+version = "0.0.1"
+authors = [
+  { name="Kenneth Tegrado", email="kategrado@up.edu.ph" },
+]
+description = "An NLP library for processing texts in Filipino."
+readme = "README.md"
+requires-python = ">=3"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/kennethtegrado/zernlp"
+"Bug Tracker" = "https://github.com/kennethtegrado/zernlp/issues"
